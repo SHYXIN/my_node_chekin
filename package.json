@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "axios": "^1.2.1",
+    "puppeteer": "^19.4.1",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
+  },
+  "name": "glados_checkin",
+  "version": "1.0.0",
+  "main": "checkin.js",
+  "scripts": {
+    "test": "node checkin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHYXIN/my_node_chekin.git"
+  },
+  "author": "wangxin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SHYXIN/my_node_chekin/issues"
+  },
+  "homepage": "https://github.com/SHYXIN/my_node_chekin#readme",
+  "description": ""
+}
