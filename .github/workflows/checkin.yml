@@ -24,10 +24,10 @@ jobs:
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       # 必须，不然到执行 node checkin.js 时会报错
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: setup Node.js
         # 理论上也可以自己命令行安装node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: '16.x'
       - name: install axios
