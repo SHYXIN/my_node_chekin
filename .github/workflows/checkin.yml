@@ -29,12 +29,12 @@ jobs:
         # 理论上也可以自己命令行安装node
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: '16.x'
       - name: install axios
-        run: npm install axios
+        run: npm install axios@^1.2.1"
         # 安装 puppeteer-extra-plugin-stealth 绕过检测
       - name: install puppeteer-extra-plugin-stealth
-        run: npm install puppeteer puppeteer-extra puppeteer-extra-plugin-stealth
+        run: npm install puppeteer@^19.4.1 puppeteer-extra@^3.3.4 puppeteer-extra-plugin-stealth@^2.11.1
       - name: CheckIn
         run: node checkin.js
         # 设置环境变量
