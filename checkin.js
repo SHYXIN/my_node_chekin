@@ -2,7 +2,6 @@ const axios = require('axios');
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const executablePath = require('puppeteer').executablePath();
-process.env.COOKIES = '_ga=GA1.2.97644244.1666236920; koa:sess=eyJ1c2VySWQiOjE2NTE2NCwiX2V4cGlyZSI6MTY5MjE1Njk1MzA0OCwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=f22DbJgKDf1yGPtE12asR-WVuyI; __stripe_mid=c8b89b0f-87e3-426f-91f7-417d4ecc174c71f5fe; mp_52e5e0805583e8a410f1ed50d8e0c049_mixpanel={"distinct_id": "183f375b146a80-095c955424268-26021c51-1fa400-183f375b147d5a","$device_id": "183f375b146a80-095c955424268-26021c51-1fa400-183f375b147d5a","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}; _gid=GA1.2.987803037.1667349667'
 puppeteer.use(StealthPlugin());
 
 const INFO = {
