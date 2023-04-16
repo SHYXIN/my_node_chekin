@@ -117,13 +117,11 @@ const checkInAndGetStatus = async (cookie) => {
             const { data: { email, phone, leftDays } = {} } = await statusRes.json();
             let account = '未知账号';
             if (email) {
-                account = email.replace(/^(.)(.*)(.@.*)$/,
-                    (_, a, b, c) => a + b.replace(/./g, '*') + c
-                );
+//                 account = email.replace(/^(.)(.*)(.@.*)$/, (_, a, b, c) => a + b.replace(/./g, '*') + c);
+                account = email;
             } else if (phone) {
-                account = phone.replace(/^(.)(.*)(.)$/,
-                    (_, a, b, c) => a + b.replace(/./g, '*') + c
-                );
+//                 account = phone.replace(/^(.)(.*)(.)$/, (_, a, b, c) => a + b.replace(/./g, '*') + c);
+                account = phone;
             }
             ret[INFO.account] = account;
             ret[INFO.leftDays] = parseInt(leftDays);
