@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const executablePath = require('puppeteer').executablePath();
 puppeteer.use(StealthPlugin());
-
+// process.env.COOKIES = ''调试使用
 const INFO = {
     account: '账号',
     leftDays: '天数',
@@ -82,7 +82,8 @@ const checkInAndGetStatus = async (cookie) => {
                     'Content-Type': 'application/json;charset=utf-8',
                 },
                 body: JSON.stringify({
-                    token: "glados.network"
+                    // token: "glados.network",
+                    token: "glados.one"
                 })
             }).catch(error => {
                 console.warn('checkIn 网络错误。');
