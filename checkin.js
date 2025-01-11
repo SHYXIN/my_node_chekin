@@ -3,7 +3,10 @@ const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const executablePath = require('puppeteer').executablePath();
 puppeteer.use(StealthPlugin());
-// process.env.COOKIES = ''调试使用
+//调试使用
+process.env.COOKIES = ''
+process.env.PUSHPLUS = ''
+
 const INFO = {
     account: '账号',
     leftDays: '天数',
