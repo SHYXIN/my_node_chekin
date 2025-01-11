@@ -4,8 +4,8 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const executablePath = require('puppeteer').executablePath();
 puppeteer.use(StealthPlugin());
 //调试使用
-process.env.COOKIES = ''
-process.env.PUSHPLUS = ''
+// process.env.COOKIES = ''
+// process.env.PUSHPLUS = ''
 
 const INFO = {
     account: '账号',
